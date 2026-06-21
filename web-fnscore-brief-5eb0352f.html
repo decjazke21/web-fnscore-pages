@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜂鸟电竞 · 简明指南与访问提示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f9fafc;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3.2rem 1.2rem 4rem;
+            min-height: 100vh;
+            color: #1e2a3a;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+        }
+
+        /* 标题层级 —— 窄、清、静 */
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 450;
+            letter-spacing: -0.02em;
+            color: #0f1b2d;
+            margin-bottom: 0.2rem;
+            line-height: 1.2;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #5f6c80;
+            margin-bottom: 2.8rem;
+            border-bottom: 1px solid #e4e9f0;
+            padding-bottom: 1.2rem;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 2.2rem 0 0.6rem;
+            letter-spacing: -0.01em;
+            color: #1a283e;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            margin: 1.6rem 0 0.2rem;
+            color: #1f324a;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #2c3e55;
+        }
+
+        .intro-card {
+            background: white;
+            padding: 1.8rem 1.8rem 1.5rem;
+            border-radius: 14px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 20, 40, 0.03);
+            margin: 1.8rem 0 1.2rem;
+            border: 1px solid #edf2f8;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin: 1.2rem 0 1.6rem;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 1rem 1rem 0.9rem;
+            border-radius: 12px;
+            border: 1px solid #eaf0f7;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.01);
+        }
+
+        .feature-item strong {
+            display: block;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            color: #0f263b;
+        }
+
+        .feature-item span {
+            font-size: 0.88rem;
+            color: #4d6077;
+            line-height: 1.5;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #eef3fa;
+            color: #1f3d5c;
+            font-size: 0.75rem;
+            padding: 0.15rem 0.7rem;
+            border-radius: 30px;
+            font-weight: 450;
+            letter-spacing: 0.02em;
+            margin-right: 0.3rem;
+        }
+
+        .reminder-box {
+            background: #f2f6fd;
+            border-left: 3px solid #6883a0;
+            padding: 1rem 1.4rem;
+            margin: 1.8rem 0 1.2rem;
+            border-radius: 0 10px 10px 0;
+            font-size: 0.93rem;
+            color: #1d3147;
+        }
+
+        .reminder-box p {
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e3eaf2;
+            padding-bottom: 0.8rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 0.15rem;
+            color: #0f263b;
+        }
+
+        .faq-a {
+            font-size: 0.92rem;
+            color: #3d526b;
+        }
+
+        .inline-link {
+            color: #1d4f7a;
+            text-decoration: none;
+            font-weight: 450;
+            border-bottom: 1px solid #cbd8e8;
+            transition: border-color 0.15s;
+        }
+
+        .inline-link:hover {
+            border-bottom-color: #1d4f7a;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e1e8f0;
+            margin: 2rem 0 1.2rem;
+        }
+
+        .small-note {
+            font-size: 0.85rem;
+            color: #5a6f88;
+        }
+
+        /* 响应式 */
+        @media (max-width: 480px) {
+            body { padding: 1.8rem 1rem 2.5rem; }
+            h1 { font-size: 1.9rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .intro-card { padding: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>蜂鸟电竞 · 使用指南</h1>
+    <div class="subhead">数据界面 · 场景区分 · 访问说明</div>
+
+    <!-- hero 摘要 -->
+    <p style="font-size:1.05rem; font-weight:400; color:#1e3347;">
+        <a href="https://web-fnscore.com" class="inline-link">蜂鸟电竞</a> 是一个以实时比分与赛程结构为核心的轻量信息界面。  
+        本页从快速上手与访问注意两个角度展开，帮助你更清晰地理解其用途与边界。
+    </p>
+
+    <!-- 亮点卡片 (摘要+场景) -->
+    <div class="intro-card">
+        <h2 style="margin-top:0;">界面特点</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <strong>⚡ 精简赛程流</strong>
+                <span>按日期/赛事整理，减少冗余层级，适合快速浏览当日场次。</span>
+            </div>
+            <div class="feature-item">
+                <strong>📋 状态标识</strong>
+                <span>进行中、已结束、待开赛采用不同色标，无需逐条点开。</span>
+            </div>
+            <div class="feature-item">
+                <strong>🔍 赛果回溯</strong>
+                <span>历史对局记录保留基础数据，便于回顾近期表现。</span>
+            </div>
+            <div class="feature-item">
+                <strong>📱 窄屏适配</strong>
+                <span>移动端与桌面采用同一数据流，布局自动收缩。</span>
+            </div>
+        </div>
+        <p style="font-size:0.93rem; color:#3c536d; margin-bottom:0;">
+            上述特点围绕“信息可读性”设计，不包含社区、聊天或投注功能。
+        </p>
+    </div>
+
+    <!-- 使用建议 / 简明指南 -->
+    <h2>使用建议</h2>
+    <p>以下场景可能更适合将 <span class="badge">蜂鸟电竞</span> 作为辅助参考：</p>
+    <ul style="padding-left:1.4rem; margin-bottom:1.2rem; color:#2c415b; list-style-type:disc;">
+        <li style="margin-bottom:0.4rem;">查询当日主流赛事开始时间与进度，配合其他信息源交叉对照。</li>
+        <li style="margin-bottom:0.4rem;">快速浏览已完成场次的比分，无需注册或登录即可查看。</li>
+        <li style="margin-bottom:0.4rem;">在赛事密集时段，利用列表结构过滤已结束或未开始的场次。</li>
+    </ul>
+    <p style="margin-bottom:0.6rem;">数据更新频率与上游源保持一致，存在数分钟延迟属正常情况。请根据实际需求判断时效性。</p>
+
+    <!-- 可信但克制的访问说明 / 提醒 -->
+    <h2 style="margin-top:1.8rem;">访问提醒</h2>
+    <div class="reminder-box">
+        <p>🔹 <strong>内容边界</strong> — 本界面仅提供赛事比分与赛程展示，不含竞猜、博彩或金融性内容。</p>
+        <p>🔹 <strong>数据来源</strong> — 信息整理自公开赛事数据，平台不参与任何赛事组织或结果判定。</p>
+        <p>🔹 <strong>稳定性说明</strong> — 作为非商业项目，服务可能出现临时维护或访问波动，建议重要信息多方核实。</p>
+        <p style="margin-top:0.4rem;">所有使用均遵循“信息参考”原则，不对任何决策结果承担责任。</p>
+    </div>
+    <p style="font-size:0.9rem; color:#4c607a;">
+        如果你对界面逻辑感到好奇，可尝试直接访问 <a href="https://web-fnscore.com" class="inline-link">蜂鸟电竞</a>  
+        并在无账号状态下体验完整的浏览流程。
+    </p>
+
+    <!-- FAQ 摘要 -->
+    <h2 style="margin-top:2rem;">常见疑问摘要</h2>
+    <div class="faq-item">
+        <div class="faq-q">是否支持历史数据导出？</div>
+        <div class="faq-a">目前界面未提供导出或 API 接口，仅限页面直接查看。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">为什么某些赛事没有显示？</div>
+        <div class="faq-a">覆盖范围以主流赛程为主，次级赛事或区域性杯赛可能未收录。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">移动端页面布局是否与桌面一致？</div>
+        <div class="faq-a">核心列表结构相同，移动端字体与间距稍作优化，部分筛选控件位置调整。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">需要注册或付费吗？</div>
+        <div class="faq-a">完全开放访问，无需注册、登录或订阅。</div>
+    </div>
+
+    <hr>
+    <p class="small-note">
+        本介绍页仅为独立说明，与 <a href="https://web-fnscore.com" class="inline-link">蜂鸟电竞</a> 无运营隶属关系。  
+        信息客观，供参考使用。版本 · 2405
+    </p>
+</div>
+</body>
+</html>
